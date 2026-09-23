@@ -193,7 +193,7 @@ export function About() {
               <button
                 type="button"
                 onClick={handleToggleExpand}
-                className="btn-pill bg-white dark:bg-[#1A1A1A] text-[var(--text-main)] border-2 border-[var(--brand-gold)] hover:bg-[var(--brand-gold)] hover:text-black dark:hover:bg-[var(--brand-gold)] dark:hover:text-black gap-2 py-3 px-6 text-xs sm:text-sm font-semibold shadow-xs hover-lift transition-all cursor-pointer flex items-center"
+                className="btn-pill bg-[var(--bg-card)] dark:bg-[#1A1A1A] text-[var(--text-main)] border-2 border-[var(--brand-gold)] hover:bg-[var(--brand-gold)] hover:text-black dark:hover:bg-[var(--brand-gold)] dark:hover:text-black gap-2 py-3 px-6 text-xs sm:text-sm font-semibold shadow-xs hover-lift transition-all cursor-pointer flex items-center"
                 aria-expanded={isExpanded}
               >
                 <span>{isExpanded ? "Ocultar detalhes curriculares" : "Saber mais sobre a Dra. Sonaly"}</span>
