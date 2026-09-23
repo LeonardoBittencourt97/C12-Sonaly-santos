@@ -78,17 +78,17 @@ export function Navbar() {
 
   return (
     <>
-      {/* 1. LOGO MOBILE FIXA SEPARADA - DOBRO DO TAMANHO (Não empurra botões) */}
-      <div className="lg:hidden fixed top-1 left-2 sm:left-4 z-50 pointer-events-none">
+      {/* 1. LOGO MOBILE FIXA SEPARADA - REDUZIDA ~30% PARA HARMONIA E LEITURA */}
+      <div className="lg:hidden fixed top-2 left-3 sm:left-4 z-50 pointer-events-none">
         <Link href="#inicio" className="flex items-center group focus:outline-none pointer-events-auto">
-          <div className="relative h-20 sm:h-24 w-52 sm:w-64 transition-transform duration-300 group-hover:scale-105">
+          <div className="relative h-13 sm:h-15 w-40 sm:w-46 transition-transform duration-300 group-hover:scale-105">
             <Image
               src={currentLogo}
               alt={OFFICE_INFO.name}
               fill
               priority
               className="object-contain object-left drop-shadow-md"
-              sizes="260px"
+              sizes="184px"
             />
           </div>
         </Link>
@@ -98,28 +98,28 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-[var(--bg-primary)]/95 backdrop-blur-md shadow-sm border-b border-[var(--border-subtle)]/25 py-2.5 sm:py-3"
-            : "bg-transparent py-3 sm:py-4"
+            ? "bg-[var(--bg-primary)]/95 backdrop-blur-md shadow-sm border-b border-[var(--border-subtle)]/25 py-2 sm:py-2.5"
+            : "bg-transparent py-3 sm:py-3.5"
         }`}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-          <div className="relative min-h-[3rem] sm:min-h-[3.5rem] flex items-center justify-between gap-2 sm:gap-4">
+          <div className="relative min-h-[2.75rem] sm:min-h-[3rem] flex items-center justify-between gap-3 sm:gap-4">
             
             {/* Espaçador Mobile para proteger a área da logo sem afetar os botões */}
-            <div className="lg:hidden w-40 sm:w-52 flex-shrink-0 pointer-events-none" />
+            <div className="lg:hidden w-36 sm:w-42 flex-shrink-0 pointer-events-none" />
 
-            {/* Logo Desktop: Separada da altura do menu, ancorada exatamente no canto esquerdo com o dobro do tamanho */}
-            <div className="hidden lg:flex items-center justify-start relative flex-shrink-0 w-64 xl:w-72 h-12 pointer-events-none">
+            {/* Logo Desktop: Reduzida ~30%, perfeitamente contida sem sobrepor o menu */}
+            <div className="hidden lg:flex items-center justify-start relative flex-shrink-0 w-48 xl:w-56 h-11 pointer-events-none">
               <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-auto">
                 <Link href="#inicio" className="flex items-center group focus:outline-none">
-                  <div className="relative h-24 w-80 xl:h-28 xl:w-96 transition-transform duration-300 group-hover:scale-105">
+                  <div className="relative h-14 w-48 xl:h-16 xl:w-56 transition-transform duration-300 group-hover:scale-105">
                     <Image
                       src={currentLogo}
                       alt={OFFICE_INFO.name}
                       fill
                       priority
                       className="object-contain object-left drop-shadow-md"
-                      sizes="(min-width: 1280px) 384px, 320px"
+                      sizes="(min-width: 1280px) 224px, 192px"
                     />
                   </div>
                 </Link>
@@ -128,7 +128,7 @@ export function Navbar() {
 
             {/* Menu Desktop */}
             <nav
-              className={`hidden lg:flex items-center gap-6 xl:gap-8 text-[0.875rem] font-heading uppercase tracking-wider transition-colors duration-300 ${
+              className={`hidden lg:flex items-center gap-5 xl:gap-7 text-[0.875rem] font-heading uppercase tracking-wider transition-colors duration-300 ${
                 !isScrolled ? "text-white/95" : "text-[var(--text-main)]"
               }`}
             >
@@ -344,13 +344,13 @@ export function Navbar() {
         >
           <div>
             <div className="flex items-center justify-between pb-4 border-b border-[var(--border-subtle)]/25">
-              <div className="relative h-14 w-48">
+              <div className="relative h-12 w-44">
                 <Image
                   src={drawerLogo}
                   alt={OFFICE_INFO.name}
                   fill
                   className="object-contain object-left"
-                  sizes="200px"
+                  sizes="180px"
                 />
               </div>
               <button
