@@ -58,17 +58,17 @@ export function Navbar() {
     };
   }, [mobileMenuOpen]);
 
-  // Escolhe a logo apropriada de acordo com o fundo/tema
+  // Escolhe a logo apropriada de acordo com o fundo/tema (invertido para casar com os arquivos físicos)
   const currentLogo = !isScrolled
-    ? "/logo_semfundo_escritabranca_paramodoescuro.png"
+    ? "/logo_semfundo_escritapreta_paramodoclaro.png"
     : theme === "dark"
-    ? "/logo_semfundo_escritabranca_paramodoescuro.png"
-    : "/logo_semfundo_escritapreta_paramodoclaro.png";
+    ? "/logo_semfundo_escritapreta_paramodoclaro.png"
+    : "/logo_semfundo_escritabranca_paramodoescuro.png";
 
   const drawerLogo =
     theme === "dark"
-      ? "/logo_semfundo_escritabranca_paramodoescuro.png"
-      : "/logo_semfundo_escritapreta_paramodoclaro.png";
+      ? "/logo_semfundo_escritapreta_paramodoclaro.png"
+      : "/logo_semfundo_escritabranca_paramodoescuro.png";
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);

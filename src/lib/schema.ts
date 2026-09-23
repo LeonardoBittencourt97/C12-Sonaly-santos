@@ -14,8 +14,8 @@ export function getLegalServiceSchema() {
     url: siteUrl,
     telephone: `+${OFFICE_INFO.whatsappNumber}`,
     priceRange: "$$",
-    image: `${siteUrl}/logo_semfundo_escritapreta_paramodoclaro.png`,
-    logo: `${siteUrl}/logo_semfundo_escritapreta_paramodoclaro.png`,
+    image: `${siteUrl}/logo_semfundo_escritabranca_paramodoescuro.png`,
+    logo: `${siteUrl}/logo_semfundo_escritabranca_paramodoescuro.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Paraná Office - Av. Paraná, 1755 - Sala 34 - Boa Vista",

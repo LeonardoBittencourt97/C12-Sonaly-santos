@@ -22,7 +22,7 @@ export function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <div className="relative h-14 w-72">
               <Image
-                src="/logo_semfundo_escritabranca_paramodoescuro.png"
+                src="/logo_semfundo_escritapreta_paramodoclaro.png"
                 alt={OFFICE_INFO.name}
                 fill
                 className="object-contain object-left"
